@@ -1,7 +1,7 @@
 /* General styling for the extension popup */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-image: linear-gradient(270deg, #9ee0ff 0%, #95ffe8 100%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,11 +12,10 @@ body {
 
 .container {
     width: 350px;
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    background: url('https://s.tmimgcdn.com/scr/800x500/250600/background-wave-water-blue-vector-design-v13_250627-original.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
 }
 
 h1 {
@@ -48,19 +47,26 @@ input[type="number"] {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
     box-sizing: border-box;
     font-size: 14px;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    box-shadow: 0 0 5px rgba(0, 147, 233, 0.5);
+    border-color: #0093E9;
 }
 
 button {
     width: 100%;
     padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button#loginButton {
@@ -78,7 +84,7 @@ button#loginButton:hover {
     justify-content: space-between;
     padding: 10px;
     background-color: #f9f9f9;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid #ddd;
 }
 
@@ -102,23 +108,27 @@ button#loginButton:hover {
 }
 
 button.buy-button {
-    background-color: #28a745;
+    background-color: #00be2f;
+    background-image: linear-gradient(270deg, #35d200 0%, #00b844 100%);
     color: #fff;
     width: 48%;
+    transition: background 0.3s ease;
 }
 
 button.buy-button:hover {
-    background-color: #218838;
+    background-image: linear-gradient(315deg, #3a8b53 0%, #00372b 100%);
 }
 
 button.sell-button {
-    background-color: #dc3545;
+    background-color: #e52d27;
+    background-image: linear-gradient(315deg, #e52d27 0%, #e52d27 100%);
     color: #fff;
     width: 48%;
+    transition: background 0.3s ease;
 }
 
 button.sell-button:hover {
-    background-color: #c82333;
+    background-image: linear-gradient(315deg, #4a0002 0%, #592d00 100%);
 }
 
 button#reloadButton {
@@ -127,6 +137,7 @@ button#reloadButton {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 button#reloadButton:hover {
@@ -137,6 +148,7 @@ button.logout-button {
     background-color: #6c757d;
     color: #fff;
     margin-top: 20px;
+    border-radius: 20px;
 }
 
 button.logout-button:hover {
@@ -155,7 +167,7 @@ button.logout-button:hover {
 
 #outputMessage {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 #outputMessage.success {
@@ -170,7 +182,7 @@ button.logout-button:hover {
 
 #outputMessage1 {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 #outputMessage1.success {
@@ -183,7 +195,7 @@ button.logout-button:hover {
     color: #721c24;
 }
 
-/* .loading-spinner {
+.loading-spinner {
     position: fixed;
     top: 0;
     left: 0;
@@ -204,16 +216,6 @@ button.logout-button:hover {
     border-top: 4px solid transparent;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-} */
-
-.loading-spinner .loader {
-    border-top-color: #007bff;
-    border-top-style: solid;
-    border-top-width: 4px;
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
@@ -224,3 +226,4 @@ button.logout-button:hover {
         transform: rotate(360deg);
     }
 }
+

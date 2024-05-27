@@ -4,46 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paper Trading Extension</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" >
 </head>
-<body class="bg-blue-50 flex items-center justify-center h-screen">
-    <div class="container bg-white p-6 rounded-2xl shadow-lg">
-        <h1 class="text-2xl font-semibold text-blue-600 mb-6">Paper Trading</h1>
-        <div id="login-section" class="key-section mb-6">
-            <label for="apiKey" class="block text-gray-600 font-bold mb-2">API Key:</label>
-            <input type="text" id="apiKey" class="w-full p-3 border border-gray-300 rounded-lg mb-4" placeholder="Enter API Key">
-            <button id="loginButton" class="w-full p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">Login</button>
-            <div class="output1 mt-4">
-                <div id="outputMessage1" class="text-center text-sm"></div>
+<body>
+    <div class="container">
+        <h1>Paper Trading</h1>
+        <div id="login-section" class="key-section">
+            <label for="apiKey">API Key:</label>
+            <input type="text" id="apiKey" placeholder="Enter API Key">
+            <button id="loginButton">Login</button>
+            <br><br><br>
+            <div class="output1">
+                <div id="outputMessage1"></div>
             </div>
         </div>
         <div id="content-section" style="display: none;">
-            <div class="user-info flex justify-between bg-gray-100 p-3 rounded-lg mb-4">
+            <div class="user-info">
                 <div class="user-name">Name: <span id="userName"></span></div>
                 <div class="user-balance">Balance: <span id="userBalance"></span></div>
             </div>
-            <div class="stock-info flex justify-between bg-gray-100 p-3 rounded-lg mb-4">
+            <div class="stock-info">
                 <div class="stock-name">Stock: <span id="stockName"></span></div>
                 <div class="stock-price">Current Price: <span id="stockPrice"></span></div>
             </div>
-            <button id="reloadButton" class="w-full p-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition duration-300 mb-4">Reload</button>
+            <button id="reloadButton">Reload</button>
             <div class="trade-section">
-                <label for="quantity" class="block text-gray-600 font-bold mb-2">Quantity:</label>
-                <input type="number" id="quantity" class="w-full p-3 border border-gray-300 rounded-lg mb-4" min="1" placeholder="Enter quantity">
-                <div class="trade-buttons flex justify-between mb-4">
-                    <button id="buyButton" class="w-1/2 p-3 bg-green-500 text-white rounded-lg mr-2 hover:bg-green-600 transition duration-300">BUY</button>
-                    <button id="sellButton" class="w-1/2 p-3 bg-red-500 text-white rounded-lg ml-2 hover:bg-red-600 transition duration-300">SELL</button>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" placeholder="Enter quantity">
+                <div class="trade-buttons">
+                    <button id="buyButton" class="buy-button">BUY</button>
+                    <button id="sellButton" class="sell-button" >SELL</button>
                 </div>
             </div>
-            <div class="output mb-4">
-                <div id="outputMessage" class="text-center text-sm"></div>
+            <div class="output">
+                <div id="outputMessage"></div>
             </div>
-            <button id="logoutButton" class="w-full p-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition duration-300">Logout</button>
+            <button id="logoutButton" class="logout-button">Logout</button>
         </div>
-        <div id="loading" class="loading-spinner fixed top-0 left-0 w-full h-full bg-white bg-opacity-80 flex items-center justify-center hidden">
-            <div class="loader border-t-4 border-blue-500 rounded-full w-12 h-12 animate-spin"></div>
-        </div>
+        <div id="loading" class="loading-spinner" style="display: none;"></div>
     </div>
     <script src="popup.js"></script>
 </body>
