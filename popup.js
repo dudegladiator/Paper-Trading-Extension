@@ -1,4 +1,5 @@
-const apiBaseUrl = 'https://papertrading-iitkhargpur-c377afda.koyeb.app'; // Replace with the actual API base URL
+// const apiBaseUrl = 'https://papertrading-iitkhargpur-c377afda.koyeb.app'; 
+const apiBaseUrl = 'https://paper-trading-latest.onrender.com'; 
 
 // don't add / at the end of the url
 
