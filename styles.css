@@ -1,0 +1,226 @@
+/* General styling for the extension popup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.key-section,
+.user-info,
+.stock-info,
+.trade-section,
+.output {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#loginButton {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button#loginButton:hover {
+    background-color: #0056b3;
+}
+
+.user-info,
+.stock-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.user-info div,
+.stock-info div {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.trade-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trade-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button.buy-button {
+    background-color: #28a745;
+    color: #fff;
+    width: 48%;
+}
+
+button.buy-button:hover {
+    background-color: #218838;
+}
+
+button.sell-button {
+    background-color: #dc3545;
+    color: #fff;
+    width: 48%;
+}
+
+button.sell-button:hover {
+    background-color: #c82333;
+}
+
+button#reloadButton {
+    background-color: #ffc107;
+    color: #333;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button#reloadButton:hover {
+    background-color: #e0a800;
+}
+
+button.logout-button {
+    background-color: #6c757d;
+    color: #fff;
+    margin-top: 20px;
+}
+
+button.logout-button:hover {
+    background-color: #5a6268;
+}
+
+.output {
+    font-size: 14px;
+    color: #333;
+}
+
+.output1 {
+    font-size: 14px;
+    color: #333;
+}
+
+#outputMessage {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#outputMessage.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#outputMessage.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+#outputMessage1 {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#outputMessage1.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#outputMessage1.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* .loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-spinner::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 4px solid #007bff;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+} */
+
+.loading-spinner .loader {
+    border-top-color: #007bff;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
