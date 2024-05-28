@@ -18,29 +18,56 @@
 Introducing **Paper Trading Chrome Extension**, a state-of-the-art platform meticulously designed for both aspiring traders and seasoned investors. Leveraging the robust capabilities of TradingView, this extension empowers users to simulate real-time stock trading in a completely risk-free environment. Through the use of virtual currency, users can seamlessly buy and sell stocks, refining their trading strategies with zero financial risk.
 
 ## Key Features
-- **Real-Time Market Data**: Access live market data directly from TradingView, ensuring users are always trading with the most up-to-date information.
-- **Intuitive User Interface**: A sleek and user-friendly interface that makes trading easy and enjoyable, even for beginners.
-- **Portfolio Management**: Track your trades and monitor your portfolio performance with comprehensive analytics and reporting tools.
-- **Virtual Currency**: Trade using virtual currency, providing a safe space to practice and refine trading strategies.
-- **TradingView Integration**: Seamless integration with TradingView allows users to utilize advanced charting tools, technical analysis, and other premium features.
 
-## Benefits
-- **Risk-Free Learning**: Perfect for beginners who want to learn trading without risking real money.
-- **Strategy Testing**: Experienced traders can test new strategies in a simulated environment.
-- **Enhanced Decision Making**: Gain insights and confidence in trading decisions through detailed performance reports and analytics.
-- **Convenience**: Accessible directly from your Chrome browser, making it easy to trade anytime, anywhere.
-
-## How It Works
-1. **Install the Extension**: Download and install the Paper Trading Chrome Extension from the Chrome Web Store.
-2. **Create an Account**: Sign up or log in using your existing TradingView credentials.
-3. **Start Trading**: Use the virtual currency provided to start buying and selling stocks. Utilize the integrated TradingView tools for technical analysis and charting.
-4. **Track Performance**: Monitor your portfolio and review detailed analytics to improve your trading strategies.
-5. **Learn and Improve**: Access educational resources to enhance your trading knowledge and skills.
+- **Real-Time Market Data:** Gain access to live market data directly from TradingView, ensuring you always trade with the most current information.
+- **Intuitive User Interface:** Enjoy a sleek, user-friendly interface designed to make trading easy and enjoyable, even for beginners.
+- **Comprehensive Portfolio Management:** Track your trades and monitor portfolio performance with detailed analytics and reporting tools.
+- **Risk-Free Trading with Virtual Currency:** Practice and refine your trading strategies by using virtual currency in a completely safe environment.
+- **Advanced TradingView Integration:** Benefit from seamless integration with TradingView, allowing you to utilize advanced charting tools, technical analysis, and other premium features.
 
 ## Installation
-1. Clone the repository or download the repository.
-2. Turn on developer mode in your Chrome browser.
-3. Load the downloaded folder as an unpacked extension.
+
+This extension works with Chromium-based browsers such as Chrome, Brave, Edge, etc.
+
+To install the Paper Trading Chrome Extension, follow these steps:
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/dudegladiator/Paper-Trading-Extension
+    ```
+    
+    or download the zip file:  Click the big blue "Code" button, and then click "Download ZIP".
+
+2. **Extract the contents of the zip file:**
+    - Right-click on the downloaded zip file, then click "Extract Here".
+    - Save it somewhere, if you delete, you will loose the extension too.
+
+3. **Open the extension page in your Chromium browser:**
+    - Option 1: Type `chrome://extensions` in the URL bar and press Enter.
+    - Option 2: Click on the three dots in the top right of the browser, then click on "Extensions".
+
+4. **Activate developer mode:**
+    - Turn on the switch on the top right of the page that says "Developer mode".
+
+5. **Load unpacked extension:**
+    - Click on the button on the top left of the page that says "Load unpacked".
+    - Then select the folder that contains the `manifest.json` file.
+
+## Benefits
+
+- **Risk-Free Learning**: Perfect for beginners to learn trading without real money risk.
+- **Enhanced Decision Making**: Gain insights with detailed performance reports and analytics.
+- **Convenience**: Accessible from your Chrome browser for easy, anytime trading.
+- **Competition Organization**: Participate in trading competitions to challenge yourself and others.
+
+
+## How It Works
+
+1. **Install the Extension**: Download and install the Paper Trading Chrome Extension.
+2. **Create an Account**: Fill out the form to get an API key.
+3. **Start Trading**: Use virtual currency to buy and sell stocks, utilizing integrated TradingView tools.
+4. **Track Performance**: Monitor your portfolio and review analytics to refine strategies.
+
 
 ## Usage
 Currently, usage is limited to certain users via an API key. To request access, please register [here](#).
