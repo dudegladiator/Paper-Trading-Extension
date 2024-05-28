@@ -70,7 +70,7 @@ To install the Paper Trading Chrome Extension, follow these steps:
 
 
 ## Usage
-Currently, usage is limited to certain users via an API key. To request access, please register [here](#).
+Currently, usage is limited to certain users via an API key. To request access, please register [here](https://forms.gle/kHTc9CzKCBm5BGmu7).
 
 ## Screenshots
 ![Dashboard Screenshot](path_to_screenshot.png)
