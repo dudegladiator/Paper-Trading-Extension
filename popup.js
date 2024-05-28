@@ -1,6 +1,5 @@
 // const apiBaseUrl = 'https://papertrading-iitkhargpur-c377afda.koyeb.app'; 
-const apiBaseUrl = 'https://paper-trading-latest.onrender.com'; 
-
+const apiBaseUrl = 'https://paper-trading-71hl.onrender.com'; 
 // don't add / at the end of the url
 
 async function authenticate(apiKey) {
@@ -149,8 +148,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     loginButton.addEventListener('click', async function () {
+        const apiKey = apiKeyInput.value.trim(); // Trim to remove any leading/trailing whitespace
+        if (!apiKey) {
+            outputMessageDiv1.textContent = 'Please enter your API key';
+            outputMessageDiv1.className = 'error';
+            return; // Stop the function if the API key is empty
+        }
+
         showLoading();
-        const apiKey = apiKeyInput.value;
+        // const apiKey = apiKeyInput.value;
         try {
             await ensureToken(apiKey);
             chrome.storage.sync.set({ apiKey: apiKey, tokenData:tokenData }, async function () {
@@ -222,12 +228,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const marketClose = 1530; // 3:30 PM in 24-hour format
     
         // Check if the current time is within trading hours (Mon to Fri, 9:15 AM to 3:30 PM IST)
-        // if (currentDay === 0 || currentDay === 6 || currentHourMinute < marketOpen || currentHourMinute > marketClose) {
-        //     outputMessageDiv.textContent = 'Trading can only be executed between 9:15 AM and 3:30 PM from Monday to Friday (IST)';
-        //     outputMessageDiv.className = 'error';
-        //     hideLoading();
-        //     return;
-        // }
+        if (currentDay === 0 || currentDay === 6 || currentHourMinute < marketOpen || currentHourMinute > marketClose) {
+            outputMessageDiv.textContent = 'Trading can only be executed between 9:15 AM and 3:30 PM from Monday to Friday (IST)';
+            outputMessageDiv.className = 'error';
+            hideLoading();
+            return;
+        }
     
         if (stockName === '' || isNaN(stockPrice)) {
             outputMessageDiv.textContent = 'Invalid stock data';
