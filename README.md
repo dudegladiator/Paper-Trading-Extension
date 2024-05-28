@@ -1,7 +1,21 @@
-# Paper Trading Chrome Extension
+# Paper Trading Extension
+
+<p align="center">
+  <img src="icons/icon128.png" alt="Project Logo" width="128">
+</p>
+
+<p align="center">
+  <a href="https://github.com/yourusername/paper-trading-extension/releases">
+    <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  </a>
+</p>
 
 ## Project Overview
-Introducing our innovative Paper Trading Chrome Extension, an intuitive and robust platform designed for aspiring traders and seasoned investors alike. Built on top of TradingView, this extension allows users to simulate real-time stock trading in a risk-free environment. By leveraging the powerful features of TradingView, users can buy and sell stocks with virtual currency, honing their trading strategies without the fear of financial loss.
+
+Introducing **Paper Trading Chrome Extension**, a state-of-the-art platform meticulously designed for both aspiring traders and seasoned investors. Leveraging the robust capabilities of TradingView, this extension empowers users to simulate real-time stock trading in a completely risk-free environment. Through the use of virtual currency, users can seamlessly buy and sell stocks, refining their trading strategies with zero financial risk.
 
 ## Key Features
 - **Real-Time Market Data**: Access live market data directly from TradingView, ensuring users are always trading with the most up-to-date information.
