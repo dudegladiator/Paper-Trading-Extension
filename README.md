@@ -65,7 +65,7 @@ To install the Paper Trading Chrome Extension, follow these steps:
 
 1. **Install the Extension**: Download and install the Paper Trading Chrome Extension.
 2. **Create an Account**: Fill out the form to get an API key.
-3. **Start Trading**: Use virtual currency to buy and sell stocks, utilizing integrated TradingView tools.
+3. **Start Trading**: Open Trading view stock chart and use virtual currency to buy and sell stocks, utilizing integrated TradingView tools.
 4. **Track Performance**: Monitor your portfolio and review analytics to refine strategies.
 
 
